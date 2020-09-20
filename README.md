@@ -11,8 +11,7 @@ This is a demonstration of an onboarding system for a react native application.
   * Onboarding Button
 
 ## Screenshots
-Include logo/demo screenshot etc.
-
+![](onboard.gif)
 ## Tech/framework used
 
 <b>Built with</b>
