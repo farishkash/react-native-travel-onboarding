@@ -41,21 +41,19 @@ const OnboardScreen = () => {
   ];
   React.useEffect(() => {
     scrollX.addListener(({ value }) => {
-      if (Math.floor(value / width) === onboardInfo.length - 1) {
-        console.log(true);
-      }
-      console.log(value);
+      // if (Math.floor(value / width) === onboardInfo.length - 1) {
+      // }
     });
 
     return () => scrollX.removeListener();
   }, []);
-  function renderOnboardbutton() {
-    return (
-      <View>
-        <TitleText>Let's Go!</TitleText>
-      </View>
-    );
-  }
+  // function renderOnboardbutton() {
+  //   return (
+  //     <View>
+  //       <TitleText>Let's Go!</TitleText>
+  //     </View>
+  //   );
+  // }
   function renderBoarding() {
     return (
       <View>
