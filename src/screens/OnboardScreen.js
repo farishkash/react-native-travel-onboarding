@@ -6,7 +6,6 @@ import {
   Animated,
   Image,
   Dimensions,
-  Text,
 } from 'react-native';
 
 import { images } from '../constants';
@@ -18,7 +17,8 @@ const { travel01, travel02, travel03, logo } = images;
 
 const scrollX = new Animated.Value(0);
 
-const OnboardScreen = () => {
+const OnboardScreen = ({ navigation }) => {
+  console.log(navigation);
   const onboardInfo = [
     {
       title: 'Design Your Vacation',
@@ -41,8 +41,9 @@ const OnboardScreen = () => {
   ];
   React.useEffect(() => {
     scrollX.addListener(({ value }) => {
-      // if (Math.floor(value / width) === onboardInfo.length - 1) {
-      // }
+      if (Math.floor(value / width) === onboardInfo.length - 1) {
+        navigation.navigate('OnboardEnd');
+      }
     });
 
     return () => scrollX.removeListener();

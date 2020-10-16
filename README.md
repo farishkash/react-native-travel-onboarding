@@ -1,14 +1,16 @@
-## React Native Onboarding Demo
-React Native Travel App Onboarding Demo
+## React Native Travel App Onboarding Demo
 
 ## Motivation
-This is a demonstration of an onboarding system for a react native application.  
+This is a demonstration of an onboarding system for travel app built on react native.  
 
 ## Build status
 - 90% completed
 * Remaining Implementation
   * Code Refactor
-  * Onboarding Button
+  * Onboarding Ending 
+  
+# Run on your device using Expo
+
 
 ## Screenshots
 ![](onboard.gif)
